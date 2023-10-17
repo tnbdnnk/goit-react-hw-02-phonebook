@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 
+import css from './Filter.module.css';
+
 export function Filter({ filter, handleFilterChange }) {
     return (
-        <label htmlFor=''>
+        <label className={css.label} htmlFor=''>
             Find contacts by name 
-            <input 
+            <input
+                className={css.input}
                 input={filter}
                 type='text'
                 name='filter'
