@@ -43,9 +43,9 @@ export class App extends Component {
         });
     };
 
-    deleteContact = name => {
+    deleteContact = id => {
         const contacts = this.state.contacts.filter(contact => {
-            return contact.name.toLowerCase() !== name.toLowerCase();
+            return contact.id.toLowerCase() !== id.toLowerCase();
         });
 
         this.setState(() => {

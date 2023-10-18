@@ -12,7 +12,7 @@ export function ContactList({ contacts, deleteContact }) {
                         <button
                             className={css.contacts__btn}
                             type='button'
-                            onClick={() => deleteContact(name)}
+                            onClick={() => deleteContact(id)}
                         >
                             Delete
                         </button>
